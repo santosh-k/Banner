@@ -1,0 +1,318 @@
+/*
+ Table Of Content:
+
+ 1.) Global Typography
+ 2.) Fonts Family
+ 3.) Banner Sectin CSS
+
+ --------------------------------*/
+
+/*
+ 1.) Global Typography
+ ------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1;
+}
+
+p {
+	color: #003f80;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+strong {
+	font-weight: bold !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Links */
+
+.btn-wrapper {
+	bottom: 10px;
+	left: 10px;
+	overflow: hidden;
+	position: absolute;
+	width: 670px;
+}
+.send {
+	background: #006cb2;
+	color: #fff;
+	font-family: 'mfw_protocolharelmedium';
+	font-size: 1.8em;
+	padding: 12px 18px 10px;
+	float: left;
+}
+
+.send.add {
+	padding: 10px 20px 9px;
+}
+
+.send:hover {
+	background: #00568E;
+}
+
+.send em {
+	background: url(../images/sprite-img.png) no-repeat -89px -2px;
+	width: 10px;
+	height: 14px;
+	content: '';
+	display: inline-block;
+	margin-bottom: -1px;
+}
+.return {
+	color: #006cb2;
+	font-size: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 12px;
+	display: inline-block;
+}
+
+.return em {
+	background: url(../images/sprite-img.png) no-repeat -91px -39px;
+	width: 9px;
+	height: 14px;
+	content: '';
+	display: inline-block;
+	margin-bottom: -2px;
+}
+
+.hide-text {
+	display: none;
+}
+input[type="text"], input[type="email"] {
+	border: 1px solid #b4cbe2;
+	padding: 2px 4px;
+	height: 40px;
+	color: #707070;
+	font-size: 1.6em;
+	width: 218px;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	outline: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	line-height:2;
+}
+
+::-webkit-input-placeholder {
+	color: #707070;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #707070;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #707070;
+	opacity: 1;
+}
+
+.error::-webkit-input-placeholder {
+	color: #C80B0B;
+	opacity: 1;
+}
+
+.error::-moz-placeholder {
+	color: #C80B0B;
+	opacity: 1;
+}
+
+.error:-ms-input-placeholder {
+	color: #C80B0B;
+	opacity: 1;
+}
+
+html, body {
+	-webkit-text-size-adjust: 100%;
+}
+
+/*
+ 2.) Fonts Family
+ ------------------------------- */
+
+@font-face {
+	font-family: 'mfw_protocolharelbold';
+	src: url('../fonts/ProtocolHarelbold/MFW_ProtocolHarel-Bold.eot');
+	src: url('../fonts/ProtocolHarelbold/MFW_ProtocolHarel-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProtocolHarelbold/MFW_ProtocolHarel-Bold.woff') format('woff'), url('../fonts/ProtocolHarelbold/MFW_ProtocolHarel-Bold.ttf') format('truetype'), url('../fonts/ProtocolHarelbold/MFW_ProtocolHarel-Bold.svg#mfw_protocolharelbold') format('svg');
+}
+
+@font-face {
+	font-family: 'mfw_protocolharelmedium';
+	src: url('../fonts/ProtocolHarelMedium/MFW_ProtocolHarel-Medium.eot');
+	src: url('../fonts/ProtocolHarelMedium/MFW_ProtocolHarel-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/ProtocolHarelMedium/fonts/MFW_ProtocolHarel-Medium.woff') format('woff'), url('../fonts/ProtocolHarelMedium/MFW_ProtocolHarel-Medium.ttf') format('truetype'), url('../fonts/ProtocolHarelMedium/MFW_ProtocolHarel-Medium.svg#mfw_protocolharelmedium') format('svg');
+}
+
+/*
+ 3.) Banner Section CSS
+ --------------------------------*/
+
+#content {
+	max-width: 690px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.vip-users, .info-section, input[type="text"], input[type="email"], .btn-wrapper {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.vip-users, .info-section {
+	background: #e8eaed;
+	padding: 10px;
+	height: 192px;
+	position: relative;
+}
+
+.suces-box, .info-section {
+	display: none;
+}
+
+.suces-box > .btn-wrapper { bottom: 25px;}
+
+.vip-users h2, .info-section h2 {
+	color: #003f80;
+	font-size: 2.3em;
+	font-family: 'mfw_protocolharelbold';
+	
+}
+.vip-users h2 {
+	margin: 0 0 9px;
+	padding: 19px 60px 0 0;
+	position: relative;
+	line-height: 1.5;
+}
+.vip-users h2 span, .info-section h2 span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight:bold;
+}
+.vip-users h2:before {
+	background: url(../images/sprite-img.png) no-repeat -1px -1px;
+	width: 53px;
+	height: 53px;
+	content: '';
+	position: absolute;
+	right: 2px;
+	top: 7px;
+}
+
+.vip-users p {
+	line-height: 1.5;
+	
+}
+
+.info-section h2 {
+	margin: 0 0 10px;
+	padding: 0;
+	line-height: 1;
+}
+.info-section p {
+	margin-bottom: 15px;
+}
+.info-section form {
+	display: inline-block;
+	width: 100%;
+}
+input[type="text"].error {
+	border: 1px solid #c80b0b;
+	color: #c80b0b;
+	display:block;
+}
+
+input[type="submit"].send {
+	border: none;
+	padding: 8px 22px 7px 29px;
+	-webkit-appearance: none;
+	cursor: pointer;
+	border-radius: 0;
+	background-color: #006CB2;
+	background-image: url(../images/sprite-img.png);
+	background-position: -71px 11px;
+	background-repeat: no-repeat;
+	height:40px;
+}
+
+input[type="submit"].send:hover {
+	background-color: #00568E;
+	background-image: url(../images/sprite-img.png);
+	background-position:  -71px 11px;
+	background-repeat: no-repeat;
+}
+
+.info-section ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+}
+.info-section li {
+	float: right;
+	position: relative;
+	margin-left: 8px;
+	list-style: none;
+}
+.info-section li.none {
+	margin-left: 0;
+}
+
+.error {
+	color: #c80b0b;
+	font-size: 1.5em;
+
+	
+}
+
+.suces-msg {
+	color: #388540;
+	font-size: 1.8em;
+	font-family: 'mfw_protocolharelmedium';
+	position: relative;
+	padding: 40px 0 10px;
+}
+.suces-msg:before {
+	position: absolute;
+	top: 6px;
+	right: 0;
+	background: url(../images/sprite-img.png) no-repeat -74px -61px;
+	width: 26px;
+	height: 25px;
+	content: '';
+}
+.suces-msg span {
+	font-family: 'mfw_protocolharelbold';
+	display: inline-block;
+}
+
+@media screen and (min-device-width:600px) and (max-device-width:1024px) {
+	input.send[type="submit"], input[type="email"] {
+	background-position: -72px 9px;
+}
+
+input[type="submit"].send:hover {
+	background-position: -72px 9px;
+}
+}
+
+
